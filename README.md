@@ -65,6 +65,7 @@ Run the following command to denoise a point cloud:
 ```bash
 python denoise.py --input /path/to/input/cloud.ply --output /path/to/output/cloud_denoised.ply
 ```
+![Image](https://github.com/user-attachments/assets/65b6bdd2-c0fc-4ee6-b7c0-e95fb0ae477a)
 
 This script loads a noisy point cloud and applies the trained denoising model, saving the cleaned output to the specified file.
 
@@ -79,6 +80,7 @@ python visualize.py --input /path/to/input/cloud.ply --denoised /path/to/output/
 This will open a window displaying both the original and denoised point clouds for comparison.
 
 ---
+
 
 ## Training
 
@@ -121,8 +123,21 @@ This will output quantitative metrics such as CD (Chamfer Distance), P2M (Point-
 This section presents the performance of our method compared to existing denoising techniques across various datasets and noise levels.
 
 - **Table 4.4**: Comparison of deep-learning models trained on different types of noise distributions.
+
+
+![Image](https://github.com/user-attachments/assets/2ceacb56-ad5f-43af-bec8-4fb80595db15)
+  
 - **Table 4.6**: Performance under simulated LiDAR noise.
+
+  ![Image](https://github.com/user-attachments/assets/b926cb99-27a1-429b-9a80-f2b2cd3a637c)
+
+
 - **Visual Results**: Refer to Figures 4.6-4.10 for visual comparisons of denoised patches from different methods.
+
+  ![Image](https://github.com/user-attachments/assets/def46433-d21e-4d7c-87f1-e7e95d5689d1)
+
+![Image](https://github.com/user-attachments/assets/565fff69-1563-4996-a781-853ca6439812)
+
 
 Our method consistently outperforms traditional methods, achieving lower error rates and preserving fine details in the point clouds.
 
